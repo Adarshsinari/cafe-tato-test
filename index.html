@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Tato</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#fff1f0",
+                100: "#ffe0dd",
+                200: "#ffc5bf",
+                300: "#ff9d94",
+                400: "#ff6f61",
+                500: "#f24635",
+                600: "#d7251b",
+                700: "#b51d15",
+                800: "#971917",
+                900: "#7d1918",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur border-b border-gray-200 z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a href="#">
+          <img
+            src="assets/images/logo.jpeg?q=60&w=1200&auto=format&fit=crop"
+            alt="Cafe Tato Logo"
+            class="w-18 h-12 object-contain"
+          />
+        </a>
+
+        <nav class="hidden md:flex gap-8 text-sm font-medium">
+          <a href="#history" class="hover:text-primary-600 transition"
+            >History</a
+          >
+          <a href="#outlets" class="hover:text-primary-600 transition"
+            >Outlets</a
+          >
+          <a href="#about" class="hover:text-primary-600 transition">About</a>
+          <a href="#contact" class="hover:text-primary-600 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-24">
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <p
+            class="text-primary-600 font-semibold mb-4 uppercase tracking-wide"
+          >
+            Food • Ambience • Value for Money • Packaging
+          </p>
+
+          <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+            The OG Goan breakfast spot
+          </h2>
+
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            One of Goa's oldest and most iconic cafés since 1913❤️
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#features"
+              class="bg-primary-600 text-white px-6 py-3 rounded-xl hover:bg-primary-700 transition"
+            >
+              Order Now
+            </a>
+
+            <!-- <a
+            href="#about"
+            class="border border-gray-300 px-6 py-3 rounded-xl hover:bg-gray-100 transition"
+          >
+            Learn More
+          </a> -->
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-8">
+          <img
+            loading="lazy"
+            src="assets/images/hero.avif?q=80&w=1200&auto=format&fit=crop"
+            alt="Developer workspace"
+            class="rounded-2xl w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+          <p
+            class="text-primary-600 font-semibold uppercase tracking-wider mb-3"
+          >
+            Our Journey
+          </p>
+
+          <h2 class="text-4xl sm:text-5xl font-bold">
+            The History of Cafe Tato
+          </h2>
+        </div>
+
+        <!-- Story Block 1 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <!-- Image -->
+          <div>
+            <img
+              src="assets/images/history-1.avif?q=80&w=1200&auto=format&fit=crop"
+              alt="Old Cafe Tato"
+              class="w-full h-[350px] object-cover rounded-3xl shadow-xl"
+            />
+          </div>
+
+          <!-- Content -->
+          <div>
+            <span
+              class="text-sm font-semibold text-primary-600 uppercase tracking-wide"
+            >
+              Since 1968
+            </span>
+
+            <h3 class="text-3xl font-bold mt-3 mb-5">A Legacy of Taste</h3>
+
+            <p class="text-gray-600 leading-relaxed text-lg">
+              Cafe Tato began as a small local eatery serving authentic
+              Maharashtrian snacks and beverages. Over the decades, it became a
+              beloved destination known for its warm atmosphere and timeless
+              flavors.
+            </p>
+          </div>
+        </div>
+
+        <!-- Story Block 2 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Content -->
+          <div class="order-2 lg:order-1">
+            <span
+              class="text-sm font-semibold text-primary-600 uppercase tracking-wide"
+            >
+              Growing With Time
+            </span>
+
+            <h3 class="text-3xl font-bold mt-3 mb-5">
+              Tradition Meets Modern Comfort
+            </h3>
+
+            <p class="text-gray-600 leading-relaxed text-lg">
+              While preserving its original recipes and heritage, Cafe Tato
+              evolved into a modern dining space where generations come together
+              to enjoy memorable meals and conversations.
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="order-1 lg:order-2">
+            <img
+              src="assets/images/history-2.avif?q=80&w=1200&auto=format&fit=crop"
+              alt="Modern Cafe Tato"
+              class="w-full h-[350px] object-cover rounded-3xl shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outlets Section -->
+    <section id="outlets" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Heading -->
+        <div class="text-center mb-16">
+          <p
+            class="text-primary-600 font-semibold uppercase tracking-wider mb-3"
+          >
+            Visit Us
+          </p>
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-4">Our Outlets</h2>
+
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Experience the authentic taste and warm hospitality of Cafe Tato
+            across our locations.
+          </p>
+        </div>
+
+        <!-- Outlet Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Outlet Card -->
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300"
+          >
+            <!-- Image -->
+            <img
+              src="assets/images/pajifond-margao.avif?q=80&w=1200&auto=format&fit=crop"
+              alt="Cafe Tato Margao"
+              class="w-full h-64 object-cover"
+            />
+
+            <!-- Content -->
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">Margao</h3>
+
+                <!-- type - veg -->
+                <span
+                  class="inline-flex items-center gap-2 border border-green-600 text-green-700 text-sm font-medium px-3 py-1 rounded-full"
+                >
+                  <span
+                    class="w-3 h-3 border border-green-600 flex items-center justify-center"
+                  >
+                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
+                  </span>
+                  Veg
+                </span>
+              </div>
+
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                The original Cafe Tato experience in the heart of the city with
+                classic ambience and timeless flavors.
+              </p>
+
+              <!-- Details -->
+              <div class="space-y-3 text-sm text-gray-700">
+                <div class="flex items-start gap-3">
+                  <span>📍</span>
+                  <p>Pajifond, Madgaon, Goa 403601</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span>🕒</span>
+                  <p>7:00 AM – 10:00 PM</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span>📞</span>
+                  <p>+91 98765 43210</p>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="flex gap-3 mt-6">
+                <a
+                  href="#"
+                  class="flex-1 bg-primary-600 text-white text-center py-3 rounded-xl hover:bg-primary-700 transition"
+                >
+                  Order Now
+                </a>
+
+                <a
+                  href="#"
+                  class="flex-1 border border-gray-300 text-center py-3 rounded-xl hover:bg-gray-100 transition"
+                >
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outlet Card -->
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300"
+          >
+            <img
+              src="assets/images/panajim-church.webp?q=80&w=1200&auto=format&fit=crop"
+              alt="Cafe Tato Gogol"
+              class="w-full h-64 object-cover"
+            />
+
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">Gogol</h3>
+
+                <!-- type - veg -->
+                <span
+                  class="inline-flex items-center gap-2 border border-green-600 text-green-700 text-sm font-medium px-3 py-1 rounded-full"
+                >
+                  <span
+                    class="w-3 h-3 border border-green-600 flex items-center justify-center"
+                  >
+                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
+                  </span>
+                  Veg
+                </span>
+              </div>
+
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                A modern outlet designed for cozy gatherings, quick bites, and
+                signature Goan dishes.
+              </p>
+
+              <div class="space-y-3 text-sm text-gray-700">
+                <div class="flex items-start gap-3">
+                  <span>📍</span>
+                  <p>Gogol, Madgaon, Goa</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span>🕒</span>
+                  <p>7:30 AM – 10:00 PM</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span>📞</span>
+                  <p>+91 98765 43211</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 mt-6">
+                <a
+                  href="#"
+                  class="flex-1 bg-primary-600 text-white text-center py-3 rounded-xl hover:bg-primary-700 transition"
+                >
+                  Order Now
+                </a>
+
+                <a
+                  href="#"
+                  class="flex-1 border border-gray-300 text-center py-3 rounded-xl hover:bg-gray-100 transition"
+                >
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outlet Card -->
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300"
+          >
+            <img
+              src="assets/images/gogol.jpeg?q=80&w=1200&auto=format&fit=crop"
+              alt="Cafe Tato Panjim Church"
+              class="w-full h-64 object-cover"
+            />
+
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">Panjim Church</h3>
+
+                <!-- type - veg -->
+                <span
+                  class="inline-flex items-center gap-2 border border-green-600 text-green-700 text-sm font-medium px-3 py-1 rounded-full"
+                >
+                  <span
+                    class="w-3 h-3 border border-green-600 flex items-center justify-center"
+                  >
+                    <span class="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
+                  </span>
+                  Veg
+                </span>
+              </div>
+
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Bringing the authentic Cafe Tato experience to Panjim with a
+                fresh and modern atmosphere.
+              </p>
+
+              <div class="space-y-3 text-sm text-gray-700">
+                <div class="flex items-start gap-3">
+                  <span>📍</span>
+                  <p>Altinho, Panjim, Goa</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span>🕒</span>
+                  <p>7:00 AM – 8:30 PM</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <span>📞</span>
+                  <p>+91 98765 43212</p>
+                </div>
+              </div>
+
+              <div class="flex gap-3 mt-6">
+                <a
+                  href="#"
+                  class="flex-1 bg-primary-600 text-white text-center py-3 rounded-xl hover:bg-primary-700 transition"
+                >
+                  Order Now
+                </a>
+
+                <a
+                  href="#"
+                  class="flex-1 border border-gray-300 text-center py-3 rounded-xl hover:bg-gray-100 transition"
+                >
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          <!-- Images -->
+          <div class="relative">
+            <!-- Main Image -->
+            <img
+              src="assets/images/about-main.webp?q=80&w=1200&auto=format&fit=crop"
+              alt="Cafe Tato Interior"
+              class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Floating Card Image -->
+            <div
+              class="absolute -bottom-8 -right-4 sm:right-[-30px] bg-white p-3 rounded-2xl shadow-xl w-40 sm:w-52"
+            >
+              <img
+                src="assets/images/about-sub.avif?q=80&w=1200&auto=format&fit=crop"
+                alt="Cafe Tato Food"
+                class="w-full h-32 object-cover rounded-xl"
+              />
+
+              <p class="text-sm font-semibold mt-3 text-center">
+                Authentic Goan Taste
+              </p>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div>
+            <p
+              class="text-primary-600 font-semibold uppercase tracking-widest mb-3"
+            >
+              About Us
+            </p>
+
+            <h2 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+              Serving Tradition Since 1968
+            </h2>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              Cafe Tato is more than just a restaurant — it is a part of Goa’s
+              food culture. Known for its authentic Goan flavors, warm
+              hospitality, and timeless recipes, Cafe Tato has been loved across
+              generations.
+            </p>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              From our famous pav bhaji and batata vada to comforting filter
+              coffee and traditional snacks, every dish is prepared with care,
+              consistency, and heritage at its heart.
+            </p>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-10">
+              <div class="bg-gray-50 rounded-2xl p-5 text-center">
+                <h3 class="text-3xl font-bold text-primary-600">50+</h3>
+
+                <p class="text-gray-600 mt-2 text-sm">Years Legacy</p>
+              </div>
+
+              <div class="bg-gray-50 rounded-2xl p-5 text-center">
+                <h3 class="text-3xl font-bold text-primary-600">3</h3>
+
+                <p class="text-gray-600 mt-2 text-sm">Outlets</p>
+              </div>
+
+              <div class="bg-gray-50 rounded-2xl p-5 text-center">
+                <h3 class="text-3xl font-bold text-primary-600">1L+</h3>
+
+                <p class="text-gray-600 mt-2 text-sm">Happy Customers</p>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-3">
+              <!-- Veg -->
+              <span
+                class="inline-flex items-center gap-2 border border-green-600 text-green-700 text-sm font-medium px-4 py-2 rounded-full"
+              >
+                <span
+                  class="w-3 h-3 border border-green-600 flex items-center justify-center"
+                >
+                  <span class="w-1.5 h-1.5 bg-green-600 rounded-full"></span>
+                </span>
+
+                Veg
+              </span>
+
+              <!-- Non Veg -->
+              <span
+                class="inline-flex items-center gap-2 border border-red-600 text-red-700 text-sm font-medium px-4 py-2 rounded-full"
+              >
+                <span
+                  class="w-3 h-3 border border-red-600 flex items-center justify-center"
+                >
+                  <span class="w-1.5 h-1.5 bg-red-600 rounded-full"></span>
+                </span>
+
+                Non-Veg
+              </span>
+
+              <!-- Family Dining -->
+              <span
+                class="bg-primary-100 text-primary-700 text-sm font-medium px-4 py-2 rounded-full"
+              >
+                Family Dining
+              </span>
+
+              <!-- Since -->
+              <span
+                class="bg-yellow-100 text-yellow-700 text-sm font-medium px-4 py-2 rounded-full"
+              >
+                Since 1968
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h3 class="text-4xl font-bold mb-4">Contact</h3>
+          <p class="text-gray-600">Send us a message.</p>
+        </div>
+
+        <form class="space-y-6">
+          <div>
+            <label class="block mb-2 font-medium">Name</label>
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            />
+          </div>
+
+          <div>
+            <label class="block mb-2 font-medium">Email</label>
+            <input
+              type="email"
+              placeholder="you@example.com"
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            />
+          </div>
+
+          <div>
+            <label class="block mb-2 font-medium">Message</label>
+            <textarea
+              rows="5"
+              placeholder="Write your message..."
+              class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-primary-600 text-white px-6 py-3 rounded-xl hover:bg-primary-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 py-8 bg-gray-50">
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-gray-500 text-sm">© 2026 Brand. All rights reserved.</p>
+
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="hover:text-primary-600 transition">Twitter</a>
+          <a href="#" class="hover:text-primary-600 transition">GitHub</a>
+          <a href="#" class="hover:text-primary-600 transition">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
